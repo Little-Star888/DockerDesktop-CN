@@ -46,9 +46,9 @@ macOS 同样会校验 `app.asar` 完整性，校验值位于内层 `Docker Deskt
    - macOS: `/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Info.plist`
    - Debian/Ubuntu: `/opt/docker-desktop/resources/app.asar`
    - Debian/Ubuntu: `/opt/docker-desktop/resources/app.asar.unpacked`
-4. 替换文件：
+4. 文件操作：
    - Windows: 将汉化包内的 `app.asar` 替换到 `C:\Program Files\Docker\Docker\frontend\resources\app.asar`
-   - Windows: 将汉化包内的 `app.asar.unpacked` 替换到 `C:\Program Files\Docker\Docker\frontend\resources\app.asar.unpacked`
+   - Windows: 将汉化包内的 `app.asar.unpacked` 合并到 `C:\Program Files\Docker\Docker\frontend\resources\app.asar.unpacked`，**注意：该处是合并，而非直接替换！**
    - Windows: 将汉化包内的 `Docker Desktop.exe` 替换到 `C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe`
    - macOS: 将汉化包内的 `app.asar` 和 `app.asar.unpacked` 替换到 `/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Resources`
    - macOS: 将汉化包内的 `Info.plist` 替换到 `/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Info.plist`
